@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="SKILLS.CSS">
     <link rel="stylesheet" href="PROYECTS.CSS">
     <link rel="stylesheet" href="WORK.CSS">
+    <link rel="stylesheet" href="CONTACT.CSS">
+
 
 
 
@@ -90,7 +92,7 @@
   <div class="skills-list">
     <div class="skill">
       <div class="skill-info">
-        <i class='bx bxl-python skill-icon' title="Python"></i>
+        <i class='bx bxl-python skill-icon skill-icon-py' title="Python"></i>
         <span>Python</span>
       </div>
       <div class="skill-bar">
@@ -101,7 +103,7 @@
 
     <div class="skill">
       <div class="skill-info">
-        <i class='bx bxl-c-plus-plus skill-icon' title="C#"></i>
+        <i class='bx bxl-c-plus-plus skill-icon skill-icon-csharp' title="C#"></i>
         <span>C# / .NET</span>
       </div>
       <div class="skill-bar">
@@ -112,8 +114,8 @@
 
     <div class="skill">
       <div class="skill-info">
-        <i class='bx bxl-javascript skill-icon' title="JavaScript"></i>
-        <span>JavaScript / TypeScript</span>
+        <i class='bx bxl-javascript skill-icon skill-icon-js' title="JavaScript"></i>
+        <span>JavaScript</span>
       </div>
       <div class="skill-bar">
         <div class="skill-level" style="width: 80%;"></div>
@@ -123,7 +125,7 @@
 
     <div class="skill">
       <div class="skill-info">
-        <i class='bx bxl-flutter skill-icon' title="Flutter"></i>
+        <i class='bx bxl-flutter skill-icon skill-icon-flutter' title="Flutter"></i>
         <span>Flutter / Dart</span>
       </div>
       <div class="skill-bar">
@@ -134,7 +136,7 @@
 
     <div class="skill">
       <div class="skill-info">
-        <i class='bx bxs-server skill-icon' title="Bases de Datos"></i>
+        <i class='bx bxs-server skill-icon skill-icon-bd' title="Bases de Datos"></i>
         <span>SQL / Bases de Datos</span>
       </div>
       <div class="skill-bar">
@@ -223,31 +225,55 @@
   <div class="underline"></div>
 
   <div class="experiencia-item">
-    <div class="exp-header">
-      <h3>Avacomp SRL</h3>
-      <span class="exp-tiempo">Ene 2024 – Actualidad</span>
+    <div class="exp-logo">
+      <img src="/img/image.png" alt="Logo de Avacomp SRL">
     </div>
-    <h4 class="exp-cargo">Desarrollador de Software y Analista Junior</h4>
-    <p>
-      Comencé como pasante y actualmente soy desarrollador en Avacomp SRL, donde participo en todo el ciclo de vida del software: análisis, documentación, desarrollo e implementación.
-    </p>
-    <ul>
-      <li>Diseño y desarrollo de soluciones con C#, Blazor, JavaScript y SQL.</li>
-      <li>Implementación de metodologías ágiles (SCRUM) y trabajo en equipo.</li>
-      <li>Documentación técnica y seguimiento con Jira, Bitbucket y Confluence.</li>
-      <li>Entrega exitosa de proyectos internos como ERP y cartas de ruta.</li>
-    </ul>
+
+    <div class="exp-content">
+      <div class="exp-header">
+        <h3>Avacomp SRL</h3>
+        <span class="exp-tiempo">Ene 2024 – Actualidad</span>
+      </div>
+      <h4 class="exp-cargo">Desarrollador de Software y Analista Junior</h4>
+      <p>
+        Me integré como pasante y actualmente soy parte del equipo de desarrollo, participando en todas las fases del ciclo de vida del software: análisis, documentación, desarrollo e implementación.
+      </p>
+      <ul>
+        <li>Desarrollo con C#, Blazor, JavaScript y SQL.</li>
+        <li>Implementación de SCRUM y trabajo colaborativo.</li>
+        <li>Gestión técnica con Jira, Bitbucket y Confluence.</li>
+        <li>Entrega de proyectos como ERP y Cartas de Ruta.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 
 
-  <section id="contacto">
-    <div class="section-container">
-      <h2>Contacto</h2>
-      <p>Contenido en desarrollo...</p>
+
+<section class="contacto" id="contacto">
+  <h2 class="section-title">Contáctate conmigo</h2>
+  <div class="underline"></div>
+
+  <div class="contacto-container">
+    <div class="contacto-info">
+      <p>¿Tienes un proyecto en mente o una oportunidad laboral? ¡Estoy disponible y listo para colaborar contigo!</p>
+      <ul>
+        <li><strong>Email:</strong> rusbel.ejemplo@gmail.com</li>
+        <li><strong>Teléfono:</strong> +1 (829) 000-0000</li>
+        <li><strong>Ubicación:</strong> Santo Domingo, República Dominicana</li>
+      </ul>
     </div>
-  </section>
+
+    <form class="contacto-form" action="mailto:rusbel.ejemplo@gmail.com" method="POST" enctype="text/plain">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="5" placeholder="Tu mensaje..." required></textarea>
+      <button type="submit">Enviar mensaje</button>
+    </form>
+  </div>
+</section>
+
 </main>
 
 

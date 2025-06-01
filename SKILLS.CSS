@@ -54,9 +54,26 @@
 
 .skill-icon {
   font-size: 2rem;
-  color: #f90000;
+  /* color: #f90000; */
   filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.3));
 }
+
+.skill-icon-py {
+  color: #d2db2b;
+}
+.skill-icon-csharp {
+  color: #892bdb;
+}
+.skill-icon-js {
+  color: #ffdd00;
+}
+.skill-icon-flutter {
+  color: #1773db;
+}
+.skill-icon-bd {
+  color: #1796db;
+}
+
 
 .skill-bar {
   background-color: #ddd;
