@@ -1,0 +1,64 @@
+/* Sección Sobre Mí */
+.sobre-mi {
+  padding: 4rem 1rem;
+  background-color: #111; /* fondo oscuro para contraste */
+  color: #fff;
+}
+
+.sobre-mi-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.sobre-mi-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: red;
+  margin: 0.5rem auto 0;
+  border-radius: 4px;
+}
+
+.sobre-mi-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap; /* para que se adapte en móvil */
+  max-width: 1000px;
+  margin: 2rem auto 0;
+  padding: 0 1rem;
+}
+
+.sobre-mi-img img {
+  width: 280px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  filter: brightness(0.95) contrast(1.1);
+}
+
+.sobre-mi-texto {
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  text-align: left;
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .sobre-mi-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-mi-texto {
+    text-align: center;
+  }
+
+  .sobre-mi-img img {
+    width: 200px;
+  }
+}

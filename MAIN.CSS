@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;...&display=swap');
+
+
+.main{
+    padding-top: 60px;
+}
+
+.main-inicio{
+    display: flex; 
+    justify-content: space-around;
+    padding-bottom: 5%;
+}
+
+.main-seccion-titulo{
+    display: flex; 
+    flex-direction: column;
+        padding-left: 10px;
+}
+
+.main-social {
+  display: flex;
+  /* flex-direction: column; */
+  /* justify-content: flex-end;    lo lleva hacia abajo */
+  align-items: flex-start;      /* lo alinea a la izquierda */
+  height: 250px;
+  gap: 1rem;                    /* separa los íconos */
+  padding-left: 1rem;           /* opcional: espacio interno a la izquierda */
+  padding-bottom: 1rem; 
+
+      flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    padding-top: 70px;
+}
+.main-social {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Estilo por defecto: pantallas grandes (fila) */
+@media screen and (min-width: 769px) {
+  .main-social {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    padding-top: 70px;
+  }
+}
+
+/* Pantallas pequeñas: columna, abajo a la izquierda */
+@media screen and (max-width: 768px) {
+  .main-home-social {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 250px;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+
+
+
+.main-home-social-icon {
+    width: max-content;
+    margin-bottom: var(--mb2);
+    font-size: 1.5rem;
+    color: var(--second-color);
+    transition: .3s;
+    z-index: 55555;
+    color: rgb(255, 255, 255);
+}
+
+.main-title{
+    font-size: 2.5rem;
+    margin-bottom:  2.5rem;
+    padding-top: 10%;
+    
+}
+.home-title-color{
+    color: brown;
+
+}
+
+
+.home-img {
+  width: 100%;
+  object-fit: contain;
+  filter: brightness(0.9) contrast(1.2) saturate(1.1);
+}
+
