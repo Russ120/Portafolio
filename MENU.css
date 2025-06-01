@@ -1,0 +1,95 @@
+/* Header fijo arriba */
+body{
+  font-family:'Poppins', sans-serif;
+}
+
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #000000;
+  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+}
+
+/* Barra de navegación */
+.nav {
+  max-width: 1010px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo */
+.nav-logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Lista de enlaces */
+.nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-item {
+  margin: 0;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #ff0000;
+  left: 0;
+  bottom: -4px;
+}
+
+/* Botón hamburguesa */
+.nav-toggle {
+  display: none;
+  font-size: 1.8rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+  .nav-list {
+    position: fixed;
+    top: 44px;
+    right: -100%;
+    width: 200px;
+    height: 100vh;
+    background-color: #111111;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    transition: right 0.3s ease;
+  }
+
+  .nav-list.show-menu {
+    right: 0;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+}

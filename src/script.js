@@ -1,16 +1,17 @@
-//Toggling Menu
+// Toggling Menu
 const showMenu = (toggleId, navId) => {
     const toggle = document.getElementById(toggleId);
     const nav = document.getElementById(navId);
 
-    if(toggle && nav) {
+    if (toggle && nav) {
         toggle.addEventListener('click', () => {
-            nav.classList.toggle('show');
-        })
+            nav.classList.toggle('show-menu');  // 👈 esta línea corregida
+        });
     }
-}
+};
 
 showMenu('nav-toggle', 'nav-menu');
+
 
 //Toggling Active Link
 const navLink = document.querySelectorAll('.nav-link');
