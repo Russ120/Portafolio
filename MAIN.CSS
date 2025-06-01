@@ -8,7 +8,9 @@
 .main-inicio{
     display: flex; 
     justify-content: space-around;
-    padding-bottom: 5%;
+    padding-bottom: 6%;
+    padding-top: 3%;
+
 }
 
 .main-seccion-titulo{
@@ -37,6 +39,7 @@
 .main-social {
   display: flex;
   gap: 1rem;
+  z-index: 1;
 }
 
 /* Estilo por defecto: pantallas grandes (fila) */
@@ -78,7 +81,7 @@
 .main-title{
     font-size: 2.5rem;
     margin-bottom:  2.5rem;
-    padding-top: 10%;
+    padding-top: 20%;
     
 }
 .home-title-color{

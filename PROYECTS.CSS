@@ -1,0 +1,67 @@
+.proyectos {
+  padding: 4rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.proyecto-card {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 24px rgba(249, 0, 0, 0.3);
+}
+
+.proyecto-img {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.proyecto-card:hover .proyecto-img {
+  transform: scale(1.1);
+}
+
+.proyecto-info {
+  padding: 1.5rem;
+}
+
+.proyecto-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #f90000;
+}
+
+.proyecto-info p {
+  font-size: 0.95rem;
+  color: #ffffff;
+  text-align: justify;
+}
+
+/* Responsive (por si no se adapta bien en móviles antiguos) */
+@media (max-width: 600px) {
+  .proyecto-info p {
+    font-size: 0.85rem;
+  }
+  .proyecto-info h3 {
+    font-size: 1.2rem;
+  }
+}

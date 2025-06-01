@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="MAIN.CSS">
     <link rel="stylesheet" href="STYLE.CSS">
     <link rel="stylesheet" href="ABOUT.CSS">
+    <link rel="stylesheet" href="SKILLS.CSS">
+    <link rel="stylesheet" href="PROYECTS.CSS">
+    <link rel="stylesheet" href="WORK.CSS">
+
+
+
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
@@ -15,14 +21,16 @@
 <body>
 <header class="l-header">
   <nav class="nav">
-    <a href="#" class="nav-logo">Russ</a>
+    <a href="#" class="nav-logo">Portafolio</a>
 
     <div class="nav-toggle" id="nav-toggle">&#9776;</div>
 
     <ul class="nav-list" id="nav-menu">
-      <li class="nav-item"><a href="#inicio" class="nav-link active">Inicio</a></li>
+      <li class="nav-item"><a href="#main" class="nav-link active">Inicio</a></li>
       <li class="nav-item"><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+      <li class="nav-item"><a href="#habilidades" class="nav-link">Habilidades</a></li>
       <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+      <li class="nav-item"><a href="#experiencia" class="nav-link">Experiencia</a></li>
       <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
     </ul>
   </nav>
@@ -30,19 +38,21 @@
 
 
 
-<main class="main">
+<main class="main" id="main">
   <section class="main-inicio" id="inicio" >
     <div class="main-seccion-titulo" > 
       <div >
-        <h1 class="main-title">Hola,<br> Soy <span class="home-title-color">Rusbel</span><br> Desarrollador Software</h1>
-        <a href="#contacto" class="button">Contact</a>
+        <h1 class="main-title">Hola,<br> Soy <span class="home-title-color">Rusbel Rodriguez</span><br> Desarrollador Software</h1>
+        <!-- <a href="#contacto" class="button">Contact</a> -->
+        <a href="Curriculum Vitae - Rusbel Rodriguez (Desarrollador Software).pdf" class="button" download>Descargar CV</a>
+
       </div>
 
       <div class="main-social" >
-        <a href="https://www.linkedin.com/in/rusbel-rodriguez-paulino" class="main-home-social-icon"><i class='bx bxl-linkedin'></i></a>
-        <a href="https://www.instagram.com/russrodrz_120/" class="main-home-social-icon"><i class='bx bxl-instagram'></i></a>
-        <a href="https://github.com/Russ120" class="main-home-social-icon"><i class='bx bxl-github'></i></a>
-        <a href="https://wa.me/18296416468" class="main-home-social-icon"><i class='bx bxl-whatsapp'></i></a>
+        <a href="https://www.linkedin.com/in/rusbel-rodriguez-paulino" class="main-home-social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.instagram.com/russrodrz_120/" class="main-home-social-icon" target="_blank"><i class='bx bxl-instagram'></i></a>
+        <a href="https://github.com/Russ120" class="main-home-social-icon" target="_blank"><i class='bx bxl-github'></i></a>
+        <a href="https://wa.me/18296416468" class="main-home-social-icon" target="_blank"><i class='bx bxl-whatsapp'></i></a>
       </div>
     </div>
     <div class="home-img-container">
@@ -59,20 +69,178 @@
       <img src="/img/7.jpg" alt="Foto de Rusbel">
     </div>
     <div class="sobre-mi-texto">
+      <div class="sobre-mi-texto">
       <p>
-        Soy Rusbel Rodríguez, desarrollador de software con pasión por crear soluciones útiles y visualmente atractivas. Me especializo en aplicaciones web y móviles, combinando lógica, diseño y experiencia de usuario. Siempre busco aprender y aportar valor con cada línea de código.
+        Soy Rusbel Rodríguez, desarrollador de software con experiencia en proyectos reales. He liderado sistemas como el conteo de activos y contribuido en mejoras de plataformas ERP y Cartas de Ruta, aplicando metodologías ágiles como SCRUM.
+      </p>
+      <p>
+        Manejo lenguajes como Python, C#, JavaScript, Dart (Flutter) y SQL, y utilizo herramientas como Jira, Git, Bitbucket y Confluence. Me destaco por ser proactivo, resolutivo y siempre dispuesto a aprender.
+      </p>
+      <p>
+        Manejo lenguajes como Python, C#, JavaScript, Dart (Flutter) y SQL, y utilizo herramientas como Jira, Git, Bitbucket y Confluence. Me destaco por ser proactivo, resolutivo y siempre dispuesto a aprender.
       </p>
     </div>
   </div>
 </section>
 
+<section class="habilidades" id="habilidades">
+  <h2 class="section-title">Habilidades</h2>
+  <div class="underline"></div>
 
-  <section id="proyectos">
-    <div class="section-container">
-      <h2>Proyectos</h2>
-      <p>Contenido en desarrollo...</p>
+  <div class="skills-list">
+    <div class="skill">
+      <div class="skill-info">
+        <i class='bx bxl-python skill-icon' title="Python"></i>
+        <span>Python</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 90%;"></div>
+      </div>
+      <span class="skill-percent">90%</span>
     </div>
-  </section>
+
+    <div class="skill">
+      <div class="skill-info">
+        <i class='bx bxl-c-plus-plus skill-icon' title="C#"></i>
+        <span>C# / .NET</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 85%;"></div>
+      </div>
+      <span class="skill-percent">85%</span>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <i class='bx bxl-javascript skill-icon' title="JavaScript"></i>
+        <span>JavaScript / TypeScript</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 80%;"></div>
+      </div>
+      <span class="skill-percent">80%</span>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <i class='bx bxl-flutter skill-icon' title="Flutter"></i>
+        <span>Flutter / Dart</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 75%;"></div>
+      </div>
+      <span class="skill-percent">75%</span>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <i class='bx bxs-server skill-icon' title="Bases de Datos"></i>
+        <span>SQL / Bases de Datos</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 70%;"></div>
+      </div>
+      <span class="skill-percent">70%</span>
+    </div>
+
+    <div class="skill">
+      <div class="skill-info">
+        <i class='bx bxs-git-branch skill-icon' title="Control de Versiones"></i>
+        <span>Git / Bitbucket / Jira</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-level" style="width: 85%;"></div>
+      </div>
+      <span class="skill-percent">85%</span>
+    </div>
+  </div>
+</section>
+
+
+<section class="proyectos" id="proyectos">
+  <h2 class="section-title">Mis Proyectos</h2>
+  <div class="underline"></div>
+
+  <div class="proyectos-grid">
+    <!-- Proyecto 1 -->
+    <a href="#proyecto1" class="proyecto-card" target="_blank">
+      <div class="proyecto-img" style="background-image: url('/img/asistente.png');"></div>
+      <div class="proyecto-info">
+        <h3>Asistente de Voz - Ruby</h3>
+        <p>Asistente de voz inteligente creado con Python y conexión a base de datos.</p>
+      </div>
+    </a>
+
+    <!-- Proyecto 2 -->
+    <a href="https://russ120.github.io/MiPaginaBlogWeb-main/index.html" class="proyecto-card" target="_blank">
+      <div class="proyecto-img" style="background-image: url('/img/blog.png');"></div>
+      <div class="proyecto-info">
+        <h3>Blog Shelby Mustangs</h3>
+        <p>Landing page de un blog personal donde muestro mi facinación por los Shelby Mustangs, haz clic para ver.</p>
+      </div>
+    </a>
+
+    <!-- Proyecto 3 -->
+    <a href="#proyecto3" class="proyecto-card" target="_blank">
+      <div class="proyecto-img" style="background-image: url('/img/libreria.png');"></div>
+      <div class="proyecto-info">
+        <h3>Gestión de Libros</h3>
+        <p>Libreria creada con Python (Flask), SQL Server, Boopstrap y JavaScript, aqui se gestiona la creación, modificacion, eliminacion y publicacion de libros.</p>
+      </div>
+    </a>
+
+    <!-- Proyecto 4 -->
+    <a href="https://russ120.github.io/PrimeraCalculadora/" class="proyecto-card"  target="_blank">
+      <div class="proyecto-img" style="background-image: url('/img/calculadora.png');"></div>
+      <div class="proyecto-info">
+        <h3>Calculadora</h3>
+        <p>Calcula cualquier operacion que ingreses y te permite gestionar calculos, haz clic para ver.</p>
+      </div>
+    </a>
+
+    <!-- Proyecto 5 -->
+    <a href="#proyecto5" class="proyecto-card" target="_blank">
+      <div class="proyecto-img" style="background-image: url('/img/extension.png');"></div>
+      <div class="proyecto-info">
+        <h3>Extensión de Navegador</h3>
+        <p>Copy Horse lee en voz alta lo que copias. Proyecto con JavaScript y APIs del navegador.</p>
+      </div>
+    </a>
+
+    <!-- Proyecto 6 -->
+    <a href="#proyecto6" class="proyecto-card" target="_blank">
+      <div class="proyecto-img" style="background-image: url('/img/interestelar\ 2.jpg');"></div>
+      <div class="proyecto-info">
+        <h3>Interestelar App</h3>
+        <p>Aplicacion tematica basada el la pelicula Interestelar, aqui se detalla la pelicula y se muestra un ambiente de otro planeta.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section class="experiencia" id="experiencia">
+  <h2 class="section-title">Experiencia Laboral</h2>
+  <div class="underline"></div>
+
+  <div class="experiencia-item">
+    <div class="exp-header">
+      <h3>Avacomp SRL</h3>
+      <span class="exp-tiempo">Ene 2024 – Actualidad</span>
+    </div>
+    <h4 class="exp-cargo">Desarrollador de Software y Analista Junior</h4>
+    <p>
+      Comencé como pasante y actualmente soy desarrollador en Avacomp SRL, donde participo en todo el ciclo de vida del software: análisis, documentación, desarrollo e implementación.
+    </p>
+    <ul>
+      <li>Diseño y desarrollo de soluciones con C#, Blazor, JavaScript y SQL.</li>
+      <li>Implementación de metodologías ágiles (SCRUM) y trabajo en equipo.</li>
+      <li>Documentación técnica y seguimiento con Jira, Bitbucket y Confluence.</li>
+      <li>Entrega exitosa de proyectos internos como ERP y cartas de ruta.</li>
+    </ul>
+  </div>
+</section>
+
+
 
   <section id="contacto">
     <div class="section-container">
@@ -89,6 +257,7 @@
   <script src="/MENU.js"></script>
     <script src="/MENU.js"></script>
   <script src="/app.js"></script>
+  <script src="/proyect.js"></script>
 
 </body>
 </html>
