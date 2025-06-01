@@ -1,3 +1,17 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
 /* Sección Sobre Mí */
 .sobre-mi {
   padding: 4rem 1rem;
@@ -27,14 +41,15 @@
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap; /* para que se adapte en móvil */
+  flex-wrap: wrap;
   max-width: 1000px;
   margin: 2rem auto 0;
   padding: 0 1rem;
 }
 
 .sobre-mi-img img {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   filter: brightness(0.95) contrast(1.1);
@@ -56,16 +71,15 @@
 
   .sobre-mi-texto {
     text-align: center;
+    padding: 0 1rem;
   }
 
   .sobre-mi-img img {
-    width: 350px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
   }
 }
-
-
-
-
 
 /* Subtema: Formación Académica dentro de Sobre mí */
 .educacion {
@@ -107,6 +121,7 @@
   padding: 1rem 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+  flex-wrap: wrap;
 }
 
 .institucion img {
