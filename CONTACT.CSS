@@ -1,5 +1,5 @@
 .contacto {
-  background-color: #0a0a0a;
+  /* background-color: #0a0a0a; */
   color: #fff;
   padding: 4rem 1rem;
   font-family: 'Poppins', sans-serif;
@@ -27,10 +27,10 @@
   gap: 2rem;
   flex-wrap: wrap;
   margin-top: 2rem;
-  background: #1a1a1a;
+  /* background: #1a1a1a; */
   border-radius: 15px;
   padding: 2rem;
-  box-shadow: 0 0 20px rgba(249, 0, 0, 0.2);
+  /* box-shadow: 0 0 20px rgba(249, 0, 0, 0.2); */
 }
 
 .contacto-info {
