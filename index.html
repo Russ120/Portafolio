@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="styles/PROYECTS.CSS">
     <link rel="stylesheet" href="styles/WORK.CSS">
     <link rel="stylesheet" href="styles/CONTACT.CSS">
+    <link rel="stylesheet" href="styles/FONDO.CSS">
+
 
 
 
@@ -42,6 +44,9 @@
 
 <main class="main" id="main">
   <section class="main-inicio" id="inicio" >
+
+    <canvas class="canvas-bg"></canvas>
+
     <div class="main-seccion-titulo" > 
       <div >
         <h1 class="main-title">Hola,<br> Soy <span class="home-title-color">Rusbel Rodriguez</span><br> Desarrollador Software</h1>
@@ -59,11 +64,10 @@
     </div>
     <div class="home-img-container">
       <div class="home-img-background"></div>
-      <img src="img/sinfondo.png" alt="image" class="home-img">
+      <img id="SinFondo" src="img/sinfondo.png" alt="image" class="home-img">
     </div>
 
   </section>
-
 <section class="sobre-mi" id="sobre-mi">
   <h2 class="sobre-mi-title">Sobre mí</h2>
   <div class="sobre-mi-content">
@@ -339,6 +343,7 @@
   <script src="js/MENU.js"></script>
   <script src="js/app.js"></script>
   <script src="js/proyect.js"></script>
+  <script src="js/FONDO.js"></script>
 
 </body>
 </html>

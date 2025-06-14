@@ -1,0 +1,20 @@
+.main-inicio {
+  position: relative;
+  overflow: hidden; /* para que el canvas no se desborde */
+  background: #dd3939; /* color de fondo base */
+}
+
+.canvas-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* detrás del contenido */
+  pointer-events: none; /* permite clickear elementos encima */
+}
+
+.main-inicio > *:not(.canvas-bg) {
+  position: relative;
+  z-index: 1; /* todo el contenido va encima del canvas */
+}
