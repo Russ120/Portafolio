@@ -96,5 +96,6 @@
   width: 100%;
   object-fit: contain;
   filter: brightness(0.9) contrast(1.2) saturate(1.1);
-
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
 }
